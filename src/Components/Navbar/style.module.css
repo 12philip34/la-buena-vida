@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorheader: #c42137;
+    --blueColor: #123684;
+    --fontHead: 'Labrada', serif;
+    ---fontText: 'Quicksand', sans-serif;
+}
+
+h1 {
+    font-family: var(--fontHead);
+    color: var(--colorheader);
+}
+
+h2,
+h3 {
+    font-family: var(--fontHead);
+    color: var(--blueColor);
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #12368421;
+}
+
+.navbar .btnNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.navbar .btnNav button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid var(--colorheader);
+    transition: .5s;
+}
+
+.navbar .btnNav button a {
+    color: var(--colorheader);
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: capitalize;
+    background: transparent;
+}
+
+.navbar .btnNav button:hover a {
+    color: #fff;
+}
+
+.navbar .btnNav button:hover {
+    background: var(--colorheader);
+}
+
+@media only screen and (max-width: 425px) {
+    .navbar {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar .btnNav {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 20px;
+    }
+}

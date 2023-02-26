@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorheader: #c42137;
+    --blueColor: #123684;
+    --fontHead: 'Labrada', serif;
+    ---fontText: 'Quicksand', sans-serif;
+}
+
+p{
+    font-family: var(---fontText);
+}
+
+.businessBox {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.businessBox h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+.businessGrid,
+.businessFund
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.businessGrid .leftBusiness {
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.418)), url(../../Images/confren.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.businessGrid .leftBusiness img{
+    width: 100%;
+}
+
+.businessGrid .rightBusiness {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+.businessGrid .rightBusiness h2{
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.businessGrid .rightBusiness ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.businessGrid .rightBusiness ul li{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.businessGrid .rightBusiness span{
+    padding: 200px;
+    position: absolute;
+    background: #12368418;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    right: 0;
+    z-index: 10;
+}
+
+.businessFund{
+    padding: 20px;
+}
+
+.businessFund .rightFunded img{
+   width: 100%;
+}
+
+.businessFund .leftFunded p a{
+    color: var(--blueColor);
+ }
+
+
+@media only screen and (max-width: 768px) {
+    .businessBox
+    {
+        border-top: 2px solid #12368423;
+        margin-top: 30px;
+    }
+
+
+    .businessGrid,
+    .businessFund
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .businessBox h1 {
+        font-size: 3rem;
+    }
+
+    .businessGrid .rightBusiness ul{
+       margin-top: 20px;
+    }
+}

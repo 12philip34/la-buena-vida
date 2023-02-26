@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorheader: #c42137;
+    --blueColor: #123684;
+    --fontHead: 'Labrada', serif;
+    ---fontText: 'Quicksand', sans-serif;
+}
+
+.whoElseBox {
+    padding: 20px;
+    background: var(--blueColor);
+}
+
+.whoElseBox h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.whoElseBox .whoElseGrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin: 20px 100px;
+}
+
+.whoElseBox .whoElseGrid span {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #0a1c41;
+    position: relative;
+}
+
+.whoElseBox .whoElseGrid span h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+.whoElseBox .whoElseGrid span p {
+    color: rgb(179, 177, 177);
+}
+
+.whoElseBox .whoElseGrid span label {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    align-self: center;
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whoElseBox .whoElseGrid span label img {
+    width: 100%;
+}
+
+.whoElseBox .whoElseGrid span .bgEffect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    padding: 10px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 10px;
+    z-index: 1;
+    transition: 1s;
+}
+
+.whoElseBox .whoElseGrid span:hover .bgEffect {
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.whoElseBox .whoElseGrid span:hover h3 {
+    color: #c42137;
+    z-index: 100;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.whoElseBox .whoElseGrid span:hover p {
+    color: #0a1c41;
+    z-index: 100;
+}
+
+.whoElseBox .whoElseGrid span:hover label {
+    color: #0a1c41;
+    z-index: 100;
+}
+
+@media only screen and (max-width: 425px) {
+    .whoElseBox .whoElseGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+        row-gap: 30px;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .whoElseBox .whoElseGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+        row-gap: 30px;
+    }
+}

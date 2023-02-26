@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorheader: #c42137;
+    --blueColor: #123684;
+    --fontHead: 'Labrada', serif;
+    ---fontText: 'Quicksand', sans-serif;
+}
+
+.testimonyHead{
+    text-align: center;
+    background: whitesmoke;
+    margin: 0;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.testimonies {
+    background: linear-gradient(#00000093, rgba(0, 0, 0, 0.63)), url(../../Images/connect.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card span {
+    margin: 0 200px;
+    background: #72777cd2;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card span h3 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.card span p {
+    color: whitesmoke;
+}
+
+.card span label {
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    width: 120px;
+    height: 60px;
+    background: #000000af;
+    padding: 10px;
+    border-bottom-right-radius: 50px;
+}
+
+.card span label h4{
+    color: white;
+    transition: ease-in-out 1s;
+    display: none;
+    font-size: 18px;
+}
+
+.card span:hover label {
+    transition: all 1s;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 230px;
+    height: 60px;
+}
+
+.card span:hover label h4{
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .testimonies {
+        height: 100%;
+        margin: 20px 0;
+    }
+    
+    .card span{
+        margin: 20px;
+    }
+}
