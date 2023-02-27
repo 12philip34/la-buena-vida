@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorheader: #c42137;
+    --blueColor: #123684;
+    --fontHead: 'Labrada', serif;
+    ---fontText: 'Quicksand', sans-serif;
+}
+
+.footerBox{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background: #3f4758;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBox img{
+    width: 10%;
+    margin: 20px;
+}
+
+.footerBox .paragraph{
+    margin: 10px 50px;
+}
+
+.footerBox .paragraph p{
+    color: #c6cad3;
+}
+
+.footerBox span{
+    color: #272b35;
+    text-align: center;
+    margin: 10px;
+}
+
+.footerBox label a{
+    color: #272b35;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .footerBox{
+        height: auto;
+    }   
+
+    .footerBox img{
+        width: 30%;
+    }
+
+    .footerBox .paragraph{
+        margin: 10px;
+    }
+}

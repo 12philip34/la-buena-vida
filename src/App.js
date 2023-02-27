@@ -9,6 +9,8 @@ import WhoElse from './Components/WhoElse';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import JoinUs from './Components/JoinUs';
+import ContactUs from './Components/ContactUs';
+import Footer from './Components/Footer';
 
 function App() {
   useEffect(() => {
@@ -23,6 +25,8 @@ function App() {
       <Testimonies />
       <FAQ />
       <JoinUs />
+      <ContactUs />
+      <Footer />
     </div>
   );
 }

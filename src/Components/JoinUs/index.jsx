@@ -19,7 +19,7 @@ const JoinUs = () => {
 
                 </span>
                 <span className={style.rightJoin}>
-                    <button data-aos="fade-up"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEE9u_kxKWD0deGX4xfRBDIt1yvMvH7g8OE3i67RqUWCEZKQ/viewform?usp=pp_url"> Meet Expert.</a></button>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEE9u_kxKWD0deGX4xfRBDIt1yvMvH7g8OE3i67RqUWCEZKQ/viewform?usp=pp_url" data-aos="fade-up"> Meet Expert.</a>
                     <label>
                         <span data-aos="fade-up">
                             <PeopleIcon />

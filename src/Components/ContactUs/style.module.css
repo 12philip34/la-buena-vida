@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorheader: #c42137;
+    --blueColor: #123684;
+    --fontHead: 'Labrada', serif;
+    ---fontText: 'Quicksand', sans-serif;
+}
+
+.contactGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #efeff1;
+}
+
+.contactGrid .leftContact{
+    background: linear-gradient(#040b1aaf, rgba(0, 0, 0, 0.466)), url(../../Images/confren.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactGrid .leftContact h1{
+    color: #fff;
+}
+
+.contactGrid .rightContact{
+    width: 100%;
+}
+
+.contactGrid .rightContact form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contactGrid .rightContact h2{
+   text-align: center !important;
+   text-transform: uppercase;
+}
+
+.contactGrid .rightContact form span{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    margin: 10px 0;
+}
+
+.contactGrid .rightContact form span label{
+   font-size: 20px;
+   color: #123684;
+}
+
+.contactGrid .rightContact form span input{
+   padding: 15px;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: 1px solid #c0c4cf;
+   background: #e5e5e7;
+    outline: none;
+}
+
+.contactGrid .rightContact form span input:focus{
+    border: 1px solid #c0c4cf;
+    background: #e5e5e7;
+     outline: none;
+ }
+
+ .contactGrid .rightContact button{
+    margin-top: 30px;
+    padding: 10px 50px;
+    background: #123684;
+    outline: none;
+    border: 1px solid #123684;
+ }
+
+ .contactGrid .rightContact button a{
+   color: #fff;
+   text-decoration: none;
+   text-transform: capitalize;
+ }
+
+ .contactGrid .rightContact button:hover{
+   background: #7289bb;
+   border: 1px solid #7289bb;
+  }
+
+ .contactGrid .rightContact small{
+    color: #9da0a8;
+    text-align: center;
+  }
+
+@media only screen and (max-width: 425px) {
+    .contactGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .contactGrid .leftContact{
+        height: 59vh;
+    }
+
+    .contactGrid .rightContact{
+        margin: 20px 0;
+    }
+}
